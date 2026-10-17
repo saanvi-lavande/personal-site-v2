@@ -1,0 +1,179 @@
+@import 'tailwindcss';
+@import 'tw-animate-css';
+@import 'shadcn/tailwind.css';
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --font-sans: var(--font-sans-editorial), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-jetbrains-mono), ui-monospace, monospace;
+  --color-ring: var(--ring);
+  --color-input: var(--input);
+  --color-border: var(--border);
+  --color-destructive: var(--destructive);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent: var(--accent);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-muted: var(--muted);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-secondary: var(--secondary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary: var(--primary);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-popover: var(--popover);
+  --color-card-foreground: var(--card-foreground);
+  --color-card: var(--card);
+  --color-foreground: var(--foreground);
+  --color-background: var(--background);
+  --color-line: var(--line);
+  --radius-sm: calc(var(--radius) * 0.6);
+  --radius-md: calc(var(--radius) * 0.8);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) * 1.4);
+}
+
+:root {
+  color-scheme: light;
+  --background: oklch(0.975 0.012 82);
+  --foreground: oklch(0.19 0.012 55);
+  --card: oklch(0.992 0.006 82);
+  --card-foreground: oklch(0.19 0.012 55);
+  --popover: oklch(0.992 0.006 82);
+  --popover-foreground: oklch(0.19 0.012 55);
+  --primary: oklch(0.62 0.17 354);
+  --primary-foreground: oklch(0.99 0 0);
+  --secondary: oklch(0.94 0.012 82);
+  --secondary-foreground: oklch(0.19 0.012 55);
+  --muted: oklch(0.94 0.012 82);
+  --muted-foreground: oklch(0.47 0.012 55);
+  --accent: oklch(0.92 0.025 354);
+  --accent-foreground: oklch(0.43 0.15 354);
+  --destructive: oklch(0.577 0.245 27.325);
+  --border: oklch(0.19 0.012 55 / 13%);
+  --line: oklch(0.19 0.012 55 / 20%);
+  --input: oklch(0.19 0.012 55 / 14%);
+  --ring: oklch(0.62 0.17 354);
+  --radius: 0rem;
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-background text-foreground font-sans;
+  }
+  ::selection {
+    background: var(--primary);
+    color: var(--primary-foreground);
+  }
+}
+
+@utility bg-grid {
+  background-image:
+    linear-gradient(to right, var(--border) 1px, transparent 1px),
+    linear-gradient(to bottom, var(--border) 1px, transparent 1px);
+  background-size: 48px 48px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .draw-line {
+    stroke-dasharray: 1200;
+    stroke-dashoffset: 1200;
+    animation: draw 2.4s ease-out forwards;
+  }
+  .orbit {
+    transform-origin: center;
+    transform-box: fill-box;
+    animation: spin 40s linear infinite;
+  }
+}
+
+@keyframes draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+/* Editorial art/fashion magazine direction */
+:root {
+  --background: #f7f5ef;
+  --foreground: #24211f;
+  --card: #fbfaf6;
+  --card-foreground: #24211f;
+  --primary: #c85b83;
+  --primary-foreground: #fffaf7;
+  --muted: #eeece5;
+  --muted-foreground: #77716b;
+  --border: rgba(36, 33, 31, 0.13);
+  --line: rgba(36, 33, 31, 0.22);
+  --accent: #f2e3e8;
+  --accent-foreground: #9d3d61;
+  --radius: 0rem;
+}
+
+html { background: var(--background); }
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans-editorial), Arial, sans-serif;
+  letter-spacing: -0.012em;
+}
+::selection { background: #e8b4c7; color: #24211f; }
+h1, h2, h3 {
+  font-family: var(--font-editorial), Georgia, serif;
+  font-weight: 500 !important;
+  letter-spacing: -0.045em !important;
+}
+header {
+  background: rgba(247, 245, 239, 0.94) !important;
+  border-color: var(--border) !important;
+}
+header a:first-child {
+  font-family: var(--font-editorial), Georgia, serif;
+  font-size: 1.35rem;
+  letter-spacing: -0.035em;
+}
+nav ul {
+  font-family: var(--font-sans-editorial), Arial, sans-serif !important;
+  font-size: 0.68rem !important;
+  letter-spacing: 0.12em !important;
+}
+main section { border-color: var(--border); }
+main .mx-auto.max-w-6xl { max-width: 80rem; }
+main h1 { font-size: clamp(3.5rem, 8vw, 7.6rem); line-height: 0.91; }
+main h2 { font-size: clamp(2.6rem, 5vw, 4.4rem); line-height: 0.98; }
+main h3 { line-height: 1.08; }
+main .font-mono { letter-spacing: 0.12em; }
+main .bg-grid { opacity: 0.14 !important; background-size: 72px 72px; }
+main section#top { min-height: 72vh; }
+main section#top > div.relative { padding-top: clamp(4.5rem, 10vw, 9rem); padding-bottom: clamp(4.5rem, 10vw, 9rem); }
+main section#top h1 { max-width: 11ch; font-size: clamp(3.4rem, 6.6vw, 6.8rem); line-height: 0.94; }
+main section#top h1 span:nth-child(2) { font-family: var(--font-sans-editorial), Arial, sans-serif; font-size: 0.45em; font-weight: 400; margin-top: 0.18em; margin-bottom: 0.18em; }
+main section#top p { line-height: 1.75; }
+main section[aria-labelledby='about'] { padding-top: clamp(5rem, 10vw, 9rem); padding-bottom: clamp(5rem, 10vw, 9rem); }
+main section[aria-labelledby='about'] .grid { gap: clamp(2.5rem, 7vw, 7rem); }
+main section[aria-labelledby='about'] .text-lg { font-size: clamp(1.1rem, 1.45vw, 1.45rem); line-height: 1.7; }
+main section[aria-labelledby='view'] li, main section[aria-label='Photo gallery'] li { background: #e9e5dc; }
+main section[aria-labelledby='view'] img, main section[aria-label='Photo gallery'] img { transition: transform 800ms cubic-bezier(.2,.7,.2,1), filter 800ms ease; }
+main section[aria-labelledby='view'] li:hover img, main section[aria-label='Photo gallery'] li:hover img { transform: scale(1.035); }
+main section[aria-labelledby='writing'] { background: #f0eee7; }
+main section[aria-labelledby='writing'] .group { padding-top: 2rem; padding-bottom: 2rem; }
+main section[aria-labelledby='writing'] .group > span:nth-child(2) { font-family: var(--font-editorial), Georgia, serif; font-size: clamp(1.45rem, 2.5vw, 2.1rem); line-height: 1.1; }
+footer { background: #25211f !important; }
+footer p.text-balance { font-family: var(--font-editorial), Georgia, serif; font-weight: 400 !important; font-size: clamp(3rem, 7vw, 6.5rem) !important; line-height: 0.95; max-width: 11ch; }
+footer svg { opacity: 0.2; }
+@media (max-width: 640px) {
+  main section#top > div.relative { padding-top: 4rem; padding-bottom: 4rem; }
+  nav ul { gap: 0.8rem !important; font-size: 0.58rem !important; letter-spacing: 0.06em !important; flex-wrap: wrap; }
+}
