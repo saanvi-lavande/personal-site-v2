@@ -174,9 +174,16 @@ footer { background: #25211f !important; }
 footer p.text-balance { font-family: var(--font-editorial), Georgia, serif; font-weight: 400 !important; font-size: clamp(3rem, 7vw, 6.5rem) !important; line-height: 0.95; max-width: 11ch; }
 footer svg { opacity: 0.2; }
 @media (max-width: 640px) {
+  @media (max-width: 640px) {
   main section#top > div.relative {
-  padding-top: clamp(1.5rem, 3vw, 3rem);
-  padding-bottom: clamp(3rem, 6vw, 5rem);
-}
-  nav ul { gap: 0.8rem !important; font-size: 0.58rem !important; letter-spacing: 0.06em !important; flex-wrap: wrap; }
+    padding-top: 1rem !important;
+    padding-bottom: 3rem !important;
+  }
+
+  nav ul {
+    gap: 0.8rem !important;
+    font-size: 0.58rem !important;
+    letter-spacing: 0.06em !important;
+    flex-wrap: wrap;
+  }
 }
