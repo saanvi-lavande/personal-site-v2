@@ -22,7 +22,7 @@ export function Hero() {
             <p className="font-mono text-xs uppercase tracking-widest text-muted-foreground">
               William Blake <span className="text-primary">/</span> Auguries of Innocence
             </p>
-            <p className="max-w-xl text-pretty text-base leading-relaxed text-muted-foreground md:text-lg -md-8">
+            <p className="max-w-xl text-pretty text-base leading-relaxed text-muted-foreground md:text-0.8lg -md-8">
               <strong className="font-semibold italic text-primary">Meaningful innovation</strong>{' '}
               begins with the ability to see{' '}
               <strong className="font-semibold italic text-primary">beyond the obvious</strong>{' '}
