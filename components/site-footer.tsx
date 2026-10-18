@@ -5,7 +5,7 @@ export function SiteFooter() {
     <footer className="relative overflow-hidden border-t border-line bg-foreground text-background">
       <div className="mx-auto flex max-w-6xl flex-col gap-12 px-6 py-20">
         <div className="flex flex-col gap-6">
-          <p className="-mt-32 text-4xl font-medium tracking-tight md:whitespace-nowrap md:text-6xl">Let&apos;s grab coffee :) My treat!</p>
+          <p className="-mt-16 text-4xl font-medium tracking-tight md:whitespace-nowrap md:text-6xl">Let&apos;s grab coffee :) My treat!</p>
           <a
             href={`mailto:${site.email}`}
             className=" -md-32 w-fit font-mono text-sm tracking-wide text-background/75 transition-colors hover:text-primary md:text-base"
