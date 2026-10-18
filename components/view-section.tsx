@@ -35,7 +35,7 @@ export function PhotoGrid({ items }: { items: Photo[] }) {
 
 export function ViewSection() {
   return (
-    <section aria-labelledby="view" className="mx-auto max-w-6xl scroll-mt-14 px-6 py-24">
+    <section aria-labelledby="view" className="mx-auto max-w-6xl scroll-mt-14 px-6 py-14 md:py-16">
       <SectionHeading index="05" title="My View" id="view" />
       <p className="-mt-6 mb-10 max-w-md text-muted-foreground">
         Digitally hoarding the things I find beautiful.

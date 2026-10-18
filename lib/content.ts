@@ -13,7 +13,7 @@ export const site = {
 export const about = {
   paragraphs: [
     'I chose to enroll in Berkeley because I wanted to be somewhere that did more than teach me how the world works. I wanted to learn how to *change* it.',
-    "From making healthcare more human to making the world more accessible through technologies like autonomous vehicles, I'm invested in ideas that do more than solve problems; they change how we see what’s possible. Outside of engineering, I love poetry, architecture, and art, especially surrealism. I’m fascinated by the familiar made strange, the ordinary made beautiful, and the possibilities hiding in plain sight.",
+    "From making healthcare more human to making the world more accessible through technologies like autonomous vehicles, I'm invested in ideas that do more than solve problems; they change the systems that shape our lives. Outside of engineering, I love poetry, architecture, and art, especially surrealism. I’m fascinated by the familiar made strange, and the ordinary made beautiful.",
     'Whether through engineering or art, I seek out new ways of perceiving the world, and the ideas that emerge when we learn to look at it differently.',
   ],
 }

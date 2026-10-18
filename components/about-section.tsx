@@ -12,17 +12,17 @@ function renderParagraph(text: string) {
 
 export function AboutSection() {
   return (
-    <section aria-labelledby="about" className="mx-auto max-w-6xl scroll-mt-14 px-6 py-24">
+    <section aria-labelledby="about" className="mx-auto max-w-6xl scroll-mt-14 px-6 py-14 md:py-16">
       <SectionHeading index="01" title="About Me" id="about" />
-      <div className="grid items-center gap-10 md:grid-cols-[1.25fr_0.75fr] md:gap-14">
-        <div className="flex max-w-3xl flex-col gap-5 text-lg leading-relaxed">
+      <div className="grid items-center gap-7 md:grid-cols-[1.25fr_0.75fr] md:gap-10">
+        <div className="flex max-w-3xl flex-col gap-4 text-base leading-relaxed">
           {about.paragraphs.map((p) => (
             <p key={p.slice(0, 20)} className="text-pretty text-muted-foreground">
               {renderParagraph(p)}
             </p>
           ))}
         </div>
-        <div className="relative mx-auto w-full max-w-sm pb-10 pl-8 md:mx-0">
+        <div className="relative mx-auto w-full max-w-xs pb-8 pl-6 md:mx-0">
           <div className="relative aspect-[4/5] overflow-hidden bg-card">
             <Image src="/view/facade.png" alt="Geometric modernist architecture with repeating windows and lines" fill sizes="(min-width: 768px) 28vw, 80vw" className="object-cover grayscale-[18%] contrast-[0.95]" />
           </div>

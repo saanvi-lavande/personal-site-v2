@@ -40,7 +40,7 @@ export function PostList({ items, showExcerpt = false }: { items: Post[]; showEx
 export function WritingSection() {
   return (
     <section aria-labelledby="writing" className="border-y border-line bg-card">
-      <div className="mx-auto max-w-6xl scroll-mt-14 px-6 py-24">
+      <div className="mx-auto max-w-6xl scroll-mt-14 px-6 py-14 md:py-16">
         <SectionHeading index="04" title="Thoughts" id="writing" />
         <PostList items={posts.slice(0, 3)} />
         <SeeAllLink href="/thoughts" label="All thoughts" />
