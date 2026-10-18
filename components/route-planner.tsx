@@ -173,7 +173,7 @@ export function RoutePlanner() {
   const status = noRoute ? 'no route' : arrived ? 'arrived' : 'en route'
 
   return (
-    <figure className="mx-auto flex w-full max-w-md flex-col gap-4">
+    <figure className="mx-auto -mt-8 flex w-full max-w-md flex-col gap-4">
       <div className="relative border border-line bg-background/60">
         <svg
           ref={svgRef}
