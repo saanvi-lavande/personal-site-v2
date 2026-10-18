@@ -6,7 +6,7 @@ export function Hero() {
   return (
     <section id="top" className="relative overflow-hidden border-b border-line">
       <div className="pointer-events-none absolute inset-0 [mask-image:linear-gradient(to_bottom,black,transparent)]" aria-hidden="true"><div className="absolute right-[8%] top-[12%] h-48 w-48 rounded-full border border-line md:h-72 md:w-72" /><div className="absolute right-[14%] top-[20%] h-36 w-36 rounded-full border border-primary/40 md:h-56 md:w-56" /></div>
-      <div className="relative mx-auto grid max-w-[80rem] gap-8 px-6 py-4 py-4 md:min-h-[calc(100svh-3.5rem)] md:grid-cols-[1.15fr_0.85fr] md:items-center md:py-10">
+      <div className="relative mx-auto grid max-w-[80rem] gap-8 px-6 pt-4 pb-10 md:min-h-[calc(100svh-3.5rem)] md:grid-cols-[1.15fr_0.85fr] md:items-start md:pt-4 md:pb-10">
         <div className="flex flex-col gap-6">
           <p className="flex flex-wrap items-center gap-x-3 gap-y-1 font-mono text-xs uppercase tracking-widest text-muted-foreground">
             <span className="h-px w-8 bg-primary" aria-hidden="true" />
