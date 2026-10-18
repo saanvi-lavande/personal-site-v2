@@ -173,8 +173,8 @@ main section[aria-labelledby='writing'] .group > span:nth-child(2) { font-family
 footer { background: #25211f !important; }
 footer p.text-balance { font-family: var(--font-editorial), Georgia, serif; font-weight: 400 !important; font-size: clamp(3rem, 7vw, 6.5rem) !important; line-height: 0.95; max-width: 11ch; }
 footer svg { opacity: 0.2; }
+
 @media (max-width: 640px) {
-  @media (max-width: 640px) {
   main section#top > div.relative {
     padding-top: 1rem !important;
     padding-bottom: 3rem !important;
@@ -186,8 +186,8 @@ footer svg { opacity: 0.2; }
     letter-spacing: 0.06em !important;
     flex-wrap: wrap;
   }
-  
 }
+
 main section#top > div.relative {
-    padding-block-start: 0 !important;
+  padding-block-start: 0 !important;
 }
