@@ -45,7 +45,7 @@ export function Hero() {
             </a>
           </div>
         </div>
-        <div className="md:translate-y-12">
+        <div className="md:translate-y-16">
           <RoutePlanner />
         </div>
       </div>
