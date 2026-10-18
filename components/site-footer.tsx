@@ -3,7 +3,7 @@ import { site } from '@/lib/content'
 export function SiteFooter() {
   return (
     <footer className="relative overflow-hidden border-t border-line bg-foreground text-background">
-      <div className="mx-auto flex max-w-6xl flex-col gap-12 px-6 py-20">
+      <div className="mx-auto flex max-w-6xl flex-col gap-12 px-6 py-20 md:-translate-x-8">
         <div className="flex flex-col gap-6">
           <p className="text-balance text-4xl font-medium tracking-tight md:text-6xl md:-translate-x-8">Let&apos;s grab coffee :) My treat!</p>
           <a
