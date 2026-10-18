@@ -14,7 +14,7 @@ export function Hero() {
             <span>· {site.role} · {site.location}</span>
           </p>
           <div className="flex flex-col gap-4">
-            <h1 className="text-2.5xl font-medium leading-[1.08] tracking-tight md:text-3.5xl lg:text-4.2xl">
+            <h1 className="-mt-4text-2.5xl font-medium leading-[1.08] tracking-tight md:text-3.5xl lg:text-4.2xl">
               <span className="block">“To see a World in a Grain of Sand</span>
               <span className="my-3 block font-mono text-primary">/</span>
               <span className="block">And a Heaven in a Wild Flower”</span>
