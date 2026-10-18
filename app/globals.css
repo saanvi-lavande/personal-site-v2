@@ -186,7 +186,8 @@ footer svg { opacity: 0.2; }
     letter-spacing: 0.06em !important;
     flex-wrap: wrap;
   }
-  main section#top > div.relative {
+  
+}
+main section#top > div.relative {
     padding-block-start: 0 !important;
-  }
 }
