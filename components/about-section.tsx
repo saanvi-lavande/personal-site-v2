@@ -31,7 +31,7 @@ export function AboutSection() {
               <Image src="/view/desert.png" alt="A road disappearing into a pink desert horizon" fill sizes="(min-width: 768px) 14vw, 40vw" className="object-cover" />
             </div>
           </div>
-          <p className="absolute bottom-1 right-0 font-mono text-[10px] uppercase tracking-[0.2em] text-muted-foreground">The familiar, made strange</p>
+          <p className="-mr-12 absolute bottom-1 right-0 font-mono text-[10px] uppercase tracking-[0.2em] text-muted-foreground">The familiar, made strange</p>
         </div>
       </div>
     </section>
