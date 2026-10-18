@@ -188,6 +188,3 @@ footer svg { opacity: 0.2; }
   }
 }
 
-main section#top > div.relative {
-  padding-block-start: 0 !important;
-}
