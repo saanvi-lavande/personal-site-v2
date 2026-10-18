@@ -13,7 +13,7 @@ export function SiteFooter() {
             {site.email}
           </a>
         </div>
-        <div className="relative -ml-8 w-[calc(100%+32px)] flex flex-col justify-between gap-6 border-t border-background/20 pt-6 font-mono text-xs uppercase tracking-widest text-background/60 md:flex-row md:-translate-x-8">
+        <div className="relative w-[calc(100%+32px)] flex flex-col justify-between gap-6 border-t border-background/20 pt-6 font-mono text-xs uppercase tracking-widest text-background/60 md:flex-row md:-translate-x-8">
           <ul className="flex gap-6">
             {site.socials.map((s) => (
               <li key={s.label}>
