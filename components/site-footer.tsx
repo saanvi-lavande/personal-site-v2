@@ -8,7 +8,7 @@ export function SiteFooter() {
           <p className="text-4xl font-medium tracking-tight md:whitespace-nowrap md:text-6xl">Let&apos;s grab coffee :) My treat!</p>
           <a
             href={`mailto:${site.email}`}
-            className="-ml-32 w-fit font-mono text-sm tracking-wide text-background/75 transition-colors hover:text-primary md:text-base"
+            className=" w-fit font-mono text-sm tracking-wide text-background/75 transition-colors hover:text-primary md:text-base"
           >
             {site.email}
           </a>
