@@ -418,7 +418,7 @@ MediLedger focused primarily on B2B operations, where users were companies with 
   slug: "understanding-zk-snarks-zero-knowledge-rollups",
   readTime: "6 min",
   tags: ["Blockchain", "Cryptography", "Ethereum"],
-  content: `
+  body: `
 Vitalik Buterin, co-founder of Ethereum, conceptualized the “blockchain trilemma” as the inherent challenge in achieving security, scalability, and decentralization simultaneously. Layer 2 (L2) protocols are designed to address the trilemma by enhancing scalability without compromising the security and decentralization that Layer 1 (L1) offers. Rollups bundle multiple transactions into a single batch to be processed off-chain on L2, thus significantly reducing the computational load and congestion on the L1 network.
 
 Early Layer 2 solutions like Optimism and Arbitrum approached rollups optimistically, adopting an “innocent until proven guilty” mindset where transactions are valid unless challenged within a designated “challenge window.” Although computationally efficient, this centralized approach, where fraud detection is delegated to a limited number of “sequencers,” inherently introduces vulnerabilities. If actors fail in detection or collude, the system can be compromised. The challenge of maintaining decentralization while providing relatively inexpensive rollup is what motivates zero-knowledge rollups, the most pressing example of the power of zero-knowledge proofs on-chain. Maksym Petkus’ whitepaper, “Why and How zk-SNARK Works: Definitive Explanation”, demystifies ZK-SNARKs, the underlying mechanism behind ZK rollups, and the new wave of L2 solutions.
