@@ -416,6 +416,8 @@ MediLedger focused primarily on B2B operations, where users were companies with 
   title: "Understanding ZK-SNARKs: The Cryptographic Foundation of Zero-Knowledge Rollups",
   date: "2025-09-09",
   slug: "understanding-zk-snarks-zero-knowledge-rollups",
+  readTime: "6 min",
+  tags: ["Blockchain", "Cryptography", "Ethereum"],
   content: `
 Vitalik Buterin, co-founder of Ethereum, conceptualized the “blockchain trilemma” as the inherent challenge in achieving security, scalability, and decentralization simultaneously. Layer 2 (L2) protocols are designed to address the trilemma by enhancing scalability without compromising the security and decentralization that Layer 1 (L1) offers. Rollups bundle multiple transactions into a single batch to be processed off-chain on L2, thus significantly reducing the computational load and congestion on the L1 network.
 
