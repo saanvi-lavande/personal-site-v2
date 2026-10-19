@@ -287,6 +287,8 @@ export function RoutePlanner() {
         <span className="font-sans text-pretty leading-relaxed">
           Click the grid to send the robot somewhere, or drop obstacles in its way. It finds a new shortest route
           every time, which is the same basic idea behind how self-driving cars plan their paths.
+          This was the first concept I learned in IEOR, and I was so fascinated by it that I 
+          knew I wanted to pursue the field more deeply. 
         </span>
       </figcaption>
     </figure>
