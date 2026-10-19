@@ -45,7 +45,7 @@ export function ExperienceSection() {
     <section aria-label="Experience and community" className="mx-auto max-w-6xl scroll-mt-14 px-6 py-14 md:py-16">
       <div className="grid gap-16 lg:grid-cols-[1.5fr_1fr] lg:gap-20">
         <div>
-          <SectionHeading index="02" title="Practice" id="experience" />
+          <SectionHeading index="02" title="Experience" id="experience" />
           <ol className="relative ml-1.5 border-l border-line">
             {practice.map((item, i) => (
               <li key={`${item.place}-${item.period}`} className="relative grid gap-2 pb-10 pl-8 last:pb-0 md:grid-cols-[125px_1fr] md:gap-6">
